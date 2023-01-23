@@ -1,3 +1,11 @@
+<div class="container max-w-screen-lg h-screen mx-auto">
+	<Navbar />
+    <!-- bg-red-200-->
+	<div class="mt-20 p-4">
+        <slot />
+	</div>
+</div>
+
 <nav>
     <ul>
         {#each data.data.children as children1}
@@ -17,8 +25,8 @@
 </nav>
 
 
-<slot />
-
 <script>
+	import Navbar from "$lib/components/Navbar.svelte";
+    import "../app.css";
     export let data;
 </script>

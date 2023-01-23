@@ -23,6 +23,16 @@ export const links = {
                     ]
                 },
                 {
+                    'url' : 'articles',
+                    'title' : 'Artikel',
+                    'children' : [
+                        {
+                            'url': 'game-development',
+                            'title': 'Game Development'
+                        },
+                    ]
+                },
+                {
                     'url' : 'blog',
                     'title': 'Blog',
                     'children': []
