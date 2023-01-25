@@ -39,16 +39,9 @@
 </script>
 
 <div class="md:mt-6 sticky top-0 bg-white  ">
-	<div class="hidden md:flex flex-row-reverse h-6">
-		<select name="cars" id="cars">
-			<option value="de">DE</option>
-			<option value="fr">FR</option>
-			<option value="en">EN</option>
-		</select>
-	</div>
 	<div class="divide-y divide-dotted">
 		<div class="text-center text-2xl lg:text-3xl h-12 flex">
-			<div class="flex-auto text-left md:text-center font-serif p-2">no code hero</div>
+			<div class="flex-auto text-left md:text-center font-serif p-2">no-code-hero</div>
 			<div class="md:hidden text-right flex-auto mr-6 py-1">
 				<button on:click={toggleMenu}>☰</button>
 			</div>
@@ -56,7 +49,7 @@
 		<div class="md:mt-6">
 			<ul class="hidden md:flex justify-center h-12 font-serif">
 				<li class="flex-initial w-32 h-12 text-center pt-4">
-                    <a href="/location">Articles</a>
+                    <a href="/blog">Articles</a>
                 </li>
 				<li class="flex-initial w-32 h-12 text-center pt-4">Cheatsheets</li>
 				<li class="flex-initial w-32 h-12 text-center pt-4">
@@ -76,7 +69,7 @@
 		</div>
 		<div class="container mx-auto content-center pt-20 py-3 px-4">
 			<div class="text-center mt-2">
-				<button on:click={() => goTo('notion')}>Articles</button>
+				<button on:click={() => goTo('blog')}>Articles</button>
 			</div>
             <div class="text-center mt-2">
 				<button on:click={() => goTo('notion')}>Cheatsheet</button>

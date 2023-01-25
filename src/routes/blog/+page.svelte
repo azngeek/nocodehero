@@ -1,29 +1,11 @@
-<ul>
-    <li><a href="/blog/one">Blog Eintrag </a></li>
-</ul>
-
-<button on:click={handleClick}>Load</button>
+{#each data.body as item }
+    <a href="/blog/{item.path}">{item.path}</a>
+{/each}
 
 
-{#await data}
-    Loading
-{:then response} 
-    {#each response as item}
-        {item.title}
-    {/each}
-{/await}
+<script lang="ts">
+    import type { PageData } from './$types';
+    export let data: PageData;
+    console.log(data);
 
-
-<script>
-    let data = getBlogdata();
-    
-    async function getBlogdata() {
-        const response = await fetch('/blog');
-        data = await response.json();
-        console.log(data)
-    }
-
-    function handleClick() {
-        data = getBlogdata();
-    }
 </script>
